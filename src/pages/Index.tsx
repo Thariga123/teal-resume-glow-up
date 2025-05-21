@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -10,7 +9,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <header className="w-full py-6 px-4 md:px-8 lg:px-16 flex flex-col md:flex-row justify-between items-center">
-        <h1 className="text-2xl font-bold text-teal-600">Thariga Shrinithi R</h1>
+        <h1 className="text-2xl font-bold text-teal-600">THARIGA SHRINITHI R</h1>
         <nav className="mt-4 md:mt-0">
           <ul className="flex space-x-6">
             <li>
@@ -47,16 +46,16 @@ const Index = () => {
         <section className="py-16 flex flex-col items-center text-center">
           <div className="w-32 h-32 rounded-full overflow-hidden mb-6">
             <Avatar className="w-full h-full">
-              <AvatarImage src="/profile-photo.png" alt="Thariga Shrinithi R" className="w-full h-full object-cover" />
+              <AvatarImage src="/profile-photo.png" alt="THARIGA SHRINITHI R" className="w-full h-full object-cover" />
               <AvatarFallback className="bg-teal-200 text-teal-800 text-4xl font-bold">TS</AvatarFallback>
             </Avatar>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-foreground">
-            Thariga Shrinithi R
+            THARIGA SHRINITHI R
           </h1>
           <h2 className="text-xl md:text-2xl text-teal-600 mb-6">✨ An Ambitious and Versatile Learner ✨</h2>
           <p className="text-lg max-w-2xl mb-8 text-foreground">
-            Aspiring Engineering student driven to develop innovative solutions through technical expertise and creativity. 
+            Aspiring student driven to develop innovative solutions through technical expertise and creativity. 
             Passionate about continuous learning and eager to apply skills in real-world projects.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
@@ -79,9 +78,9 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <p className="text-foreground mb-4 leading-relaxed">
-                Hello! I'm Thariga Shrinithi R, an Electronics and Communication Engineering student from SNS College
+                Hello! I'm THARIGA SHRINITHI R, a student from SNS College
                 of Engineering. I'm passionate about developing innovative solutions and have a strong foundation 
-                in electronic systems design, circuit analysis, and communication protocols.
+                in various technical areas.
               </p>
               <p className="text-foreground mb-4 leading-relaxed">
                 I'm seeking challenging opportunities to contribute, grow, and make a meaningful impact. Throughout my academic 
@@ -216,10 +215,6 @@ const Index = () => {
                   <li className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-teal-500"></div>
                     <span>UI/UX Design</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 rounded-full bg-teal-500"></div>
-                    <span>PCB Designing</span>
                   </li>
                 </ul>
               </CardContent>
@@ -453,12 +448,12 @@ const Index = () => {
                 <div className="flex items-center gap-3">
                   <Linkedin className="h-5 w-5 text-teal-600" />
                   <a 
-                    href="https://linkedin.com/in/r-tharigashrinithi-ece-snsce" 
+                    href="https://www.linkedin.com/in/r-thariga-shrinithi-ece-snsce" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-foreground hover:text-teal-600"
                   >
-                    linkedin.com/in/r-tharigashrinithi-ece-snsce
+                    linkedin.com/in/r-thariga-shrinithi-ece-snsce
                   </a>
                 </div>
                 <div className="flex items-center gap-3">
@@ -517,10 +512,10 @@ const Index = () => {
       <footer className="bg-teal-50 py-8 mt-12">
         <div className="container px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-teal-800 mb-4 md:mb-0">© 2024 Thariga Shrinithi R. All rights reserved.</p>
+            <p className="text-teal-800 mb-4 md:mb-0">© 2024 THARIGA SHRINITHI R. All rights reserved.</p>
             <div className="flex space-x-4">
               <a 
-                href="https://linkedin.com/in/r-tharigashrinithi-ece-snsce" 
+                href="https://www.linkedin.com/in/r-thariga-shrinithi-ece-snsce" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-teal-600 hover:text-teal-800"
