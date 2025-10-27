@@ -8,7 +8,7 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <header className="w-full py-6 px-4 md:px-8 lg:px-16 flex flex-col md:flex-row justify-between items-center">
+      <header className="w-full py-6 px-4 md:px-8 lg:px-16 flex flex-col md:flex-row justify-between items-center border-b border-border">
         <h1 className="text-2xl font-bold text-teal-600">Your Name</h1>
         <nav className="mt-4 md:mt-0">
           <ul className="flex space-x-6">
@@ -41,10 +41,10 @@ const Index = () => {
         </nav>
       </header>
 
-      <main className="container px-4 py-8">
+      <main className="container mx-auto px-4 py-8 max-w-7xl">
         {/* Hero Section */}
-        <section className="py-16 flex flex-col items-center text-center">
-          <div className="w-32 h-32 rounded-full overflow-hidden mb-6">
+        <section className="py-16 flex flex-col items-center text-center justify-center">
+          <div className="w-32 h-32 rounded-full overflow-hidden mb-6 shadow-lg">
             <Avatar className="w-full h-full">
               <AvatarImage src="/profile-photo.png" alt="Your Name" className="w-full h-full object-cover" />
               <AvatarFallback className="bg-teal-200 text-teal-800 text-4xl font-bold">YN</AvatarFallback>
@@ -54,7 +54,7 @@ const Index = () => {
             Your Name
           </h1>
           <h2 className="text-xl md:text-2xl text-teal-600 mb-6">📊 Aspiring Data Analyst | Transforming Data into Insights 📈</h2>
-          <p className="text-lg max-w-2xl mb-8 text-foreground">
+          <p className="text-lg max-w-2xl mb-8 text-foreground text-center leading-relaxed">
             Passionate about uncovering patterns and stories hidden in data. Skilled in data analysis, visualization, and statistical modeling. 
             Eager to leverage analytical skills to drive data-driven decision making and solve real-world business problems.
           </p>
@@ -74,16 +74,16 @@ const Index = () => {
 
         {/* About Section */}
         <section id="about" className="py-12">
-          <h2 className="text-3xl font-bold mb-6 text-teal-600">About Me 🌟</h2>
+          <h2 className="text-3xl font-bold mb-8 text-teal-600 text-center md:text-left">About Me 🌟</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <p className="text-foreground mb-4 leading-relaxed">
-                Hello! I'm a data enthusiast from SNS College of Engineering.
+            <div className="flex flex-col justify-center">
+              <p className="text-foreground mb-4 leading-relaxed text-justify">
+                Hello! I'm a data enthusiast from a leading engineering college. 
                 I'm passionate about transforming raw data into actionable insights and creating data-driven solutions 
                 that solve real business problems. My journey into data analytics has equipped me with strong analytical 
                 thinking and problem-solving skills.
               </p>
-              <p className="text-foreground mb-4 leading-relaxed">
+              <p className="text-foreground mb-4 leading-relaxed text-justify">
                 I specialize in data collection, cleaning, analysis, and visualization using industry-standard tools and techniques. 
                 With hands-on experience in multiple data analysis projects, I've developed expertise in discovering patterns, 
                 trends, and insights from complex datasets. I'm seeking opportunities to apply my skills in a dynamic environment 
@@ -95,18 +95,19 @@ const Index = () => {
                 <BookOpen className="mr-2 h-5 w-5 text-teal-600" /> Education
               </h3>
               <div id="education" className="mb-4">
-                <p className="font-medium">B.E. in Electronics and Communication Engineering</p>
-                <p className="text-teal-600">SNS College of Engineering</p>
-                <p className="text-sm text-muted-foreground">2022 - 2026 | 9.8 CGPA (till 5th Sem)</p>
+                <p className="font-medium">Bachelor of Engineering - Computer Science</p>
+                <p className="text-teal-600">University Name</p>
+                <p className="text-sm text-muted-foreground">2022 - 2026 | CGPA: 9.5/10</p>
+              </div>
+              <div className="mb-4">
+                <p className="font-medium">Higher Secondary School</p>
+                <p className="text-teal-600">School Name</p>
+                <p className="text-sm text-muted-foreground">2020 - 2022 | 90%</p>
               </div>
               <div>
-                <p className="font-medium">Higher Secondary School</p>
-                <p className="text-teal-600">KONGUNADU MAT.HR.SEC.SCHOOL</p>
-                <p className="text-sm text-muted-foreground">2021 - 2022 | 87.16%</p>
-              </div>
-              <div className="mt-4">
-                <p className="font-medium">SSLC</p>
-                <p className="text-sm text-muted-foreground">2019 - 2020 | 98.6%</p>
+                <p className="font-medium">Secondary School</p>
+                <p className="text-teal-600">School Name</p>
+                <p className="text-sm text-muted-foreground">2019 - 2020 | 95%</p>
               </div>
             </div>
           </div>
@@ -116,7 +117,7 @@ const Index = () => {
 
         {/* Training & Certifications Section */}
         <section className="py-12">
-          <h2 className="text-3xl font-bold mb-6 text-teal-600">Training & Certifications 📚</h2>
+          <h2 className="text-3xl font-bold mb-8 text-teal-600 text-center md:text-left">Training & Certifications 📚</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Card className="border-teal-100 shadow-sm">
               <CardHeader className="pb-2">
@@ -176,7 +177,7 @@ const Index = () => {
 
         {/* Skills Section */}
         <section id="skills" className="py-12">
-          <h2 className="text-3xl font-bold mb-6 text-teal-600">Data Analysis Skills 🛠️</h2>
+          <h2 className="text-3xl font-bold mb-8 text-teal-600 text-center md:text-left">Data Analysis Skills 🛠️</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <Card className="border-teal-100 shadow-sm">
               <CardHeader className="pb-2">
@@ -296,7 +297,7 @@ const Index = () => {
 
         {/* Core Competencies Section */}
         <section className="py-12">
-          <h2 className="text-3xl font-bold mb-6 text-teal-600">Core Competencies 🏆</h2>
+          <h2 className="text-3xl font-bold mb-8 text-teal-600 text-center md:text-left">Core Competencies 🏆</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Card className="border-teal-100 shadow-sm">
               <CardHeader>
@@ -376,7 +377,7 @@ const Index = () => {
 
         {/* Projects Section */}
         <section id="projects" className="py-12">
-          <h2 className="text-3xl font-bold mb-6 text-teal-600">Data Analysis Projects 📊</h2>
+          <h2 className="text-3xl font-bold mb-8 text-teal-600 text-center md:text-left">Data Analysis Projects 📊</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card className="border-teal-100 overflow-hidden hover:shadow-lg transition-shadow">
               <div className="h-48 bg-gradient-to-br from-teal-400 to-cyan-600 flex items-center justify-center">
@@ -504,7 +505,7 @@ const Index = () => {
 
         {/* Experience & Activities Section */}
         <section className="py-12">
-          <h2 className="text-3xl font-bold mb-6 text-teal-600">Experience & Activities 🌱</h2>
+          <h2 className="text-3xl font-bold mb-8 text-teal-600 text-center md:text-left">Experience & Activities 🌱</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card className="border-teal-100 shadow-sm">
               <CardHeader>
@@ -562,12 +563,13 @@ const Index = () => {
 
         {/* Contact Section */}
         <section id="contact" className="py-12">
-          <h2 className="text-3xl font-bold mb-6 text-teal-600">Get In Touch 📬</h2>
+          <h2 className="text-3xl font-bold mb-8 text-teal-600 text-center md:text-left">Get In Touch 📬</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <p className="text-foreground mb-6">
+            <div className="flex flex-col justify-center">
+              <p className="text-foreground mb-6 leading-relaxed text-justify">
                 I'm always interested in new opportunities and collaborations. Feel free to reach out to me through
-                any of the following platforms:
+                any of the following platforms. Whether it's about data analysis projects, collaboration opportunities,
+                or just to connect and discuss ideas, I'd love to hear from you.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
