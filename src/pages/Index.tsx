@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { Github, Linkedin, Mail, FileText, ExternalLink, MapPin, Calendar, Award, Rocket, Code, BookOpen, Star, Briefcase, Heart } from "lucide-react";
+import { Github, Linkedin, Mail, FileText, ExternalLink, MapPin, Calendar, Award, Rocket, Code, BookOpen, Star, Briefcase, Heart, BarChart3, Database, TrendingUp, PieChart } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Index = () => {
@@ -53,10 +53,10 @@ const Index = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-foreground">
             THARIGA SHRINITHI R
           </h1>
-          <h2 className="text-xl md:text-2xl text-teal-600 mb-6">✨ An Ambitious and Versatile Learner ✨</h2>
+          <h2 className="text-xl md:text-2xl text-teal-600 mb-6">📊 Aspiring Data Analyst | Transforming Data into Insights 📈</h2>
           <p className="text-lg max-w-2xl mb-8 text-foreground">
-            Aspiring student driven to develop innovative solutions through technical expertise and creativity. 
-            Passionate about continuous learning and eager to apply skills in real-world projects.
+            Passionate about uncovering patterns and stories hidden in data. Skilled in data analysis, visualization, and statistical modeling. 
+            Eager to leverage analytical skills to drive data-driven decision making and solve real-world business problems.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button className="bg-teal-600 hover:bg-teal-700">
@@ -78,14 +78,16 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <p className="text-foreground mb-4 leading-relaxed">
-                Hello! I'm THARIGA SHRINITHI R, a student from SNS College
-                of Engineering. I'm passionate about developing innovative solutions and have a strong foundation 
-                in various technical areas.
+                Hello! I'm THARIGA SHRINITHI R, a data enthusiast from SNS College of Engineering. 
+                I'm passionate about transforming raw data into actionable insights and creating data-driven solutions 
+                that solve real business problems. My journey into data analytics has equipped me with strong analytical 
+                thinking and problem-solving skills.
               </p>
               <p className="text-foreground mb-4 leading-relaxed">
-                I'm seeking challenging opportunities to contribute, grow, and make a meaningful impact. Throughout my academic 
-                career, I've worked on various projects that have enhanced my technical skills and problem-solving abilities. 
-                I am dedicated to continuous learning and staying updated with the latest technologies.
+                I specialize in data collection, cleaning, analysis, and visualization using industry-standard tools and techniques. 
+                With hands-on experience in multiple data analysis projects, I've developed expertise in discovering patterns, 
+                trends, and insights from complex datasets. I'm seeking opportunities to apply my skills in a dynamic environment 
+                where I can contribute to data-driven decision making.
               </p>
             </div>
             <div className="bg-teal-50 p-6 rounded-lg">
@@ -112,20 +114,42 @@ const Index = () => {
 
         <Separator className="my-12 bg-teal-100" />
 
-        {/* Value Added Courses Section */}
+        {/* Training & Certifications Section */}
         <section className="py-12">
-          <h2 className="text-3xl font-bold mb-6 text-teal-600">Value Added Courses 📚</h2>
+          <h2 className="text-3xl font-bold mb-6 text-teal-600">Training & Certifications 📚</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Card className="border-teal-100 shadow-sm">
               <CardHeader className="pb-2">
-                <CardTitle className="text-teal-700">Certifications</CardTitle>
+                <CardTitle className="text-teal-700">Data Analytics Training</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <Star className="h-5 w-5 text-teal-500 mt-0.5 flex-shrink-0" />
-                    <span>Java Nano degree certificate | Prep Insta | Sep 2023</span>
+                    <span>Phase 1 - Data Analysis (30 Levels Completed)</span>
                   </li>
+                  <li className="flex items-start gap-2">
+                    <Star className="h-5 w-5 text-teal-500 mt-0.5 flex-shrink-0" />
+                    <span>Python for Data Analysis</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Star className="h-5 w-5 text-teal-500 mt-0.5 flex-shrink-0" />
+                    <span>SQL & Database Management</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Star className="h-5 w-5 text-teal-500 mt-0.5 flex-shrink-0" />
+                    <span>Data Visualization with Power BI & Tableau</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-teal-100 shadow-sm">
+              <CardHeader className="pb-2">
+                <CardTitle className="text-teal-700">Professional Certifications</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <Star className="h-5 w-5 text-teal-500 mt-0.5 flex-shrink-0" />
                     <span>Salesforce Certified AI Associate | Salesforce | Oct 2024</span>
@@ -136,29 +160,11 @@ const Index = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <Star className="h-5 w-5 text-teal-500 mt-0.5 flex-shrink-0" />
-                    <span>HTML | Prep Insta | Dec 2024</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="border-teal-100 shadow-sm">
-              <CardHeader className="pb-2">
-                <CardTitle className="text-teal-700">More Certifications</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-2">
-                    <Star className="h-5 w-5 text-teal-500 mt-0.5 flex-shrink-0" />
-                    <span>SecOps Certified Network Security Practitioner | SecOps | Jan 2025</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Star className="h-5 w-5 text-teal-500 mt-0.5 flex-shrink-0" />
                     <span>Oracle AI Foundation Associate | Oracle | Feb 2025</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Star className="h-5 w-5 text-teal-500 mt-0.5 flex-shrink-0" />
-                    <span>SecOps Certified AppSec Practitioner | SecOps | Mar 2025</span>
+                    <span>Advanced Excel & Statistical Analysis</span>
                   </li>
                 </ul>
               </CardContent>
@@ -170,31 +176,31 @@ const Index = () => {
 
         {/* Skills Section */}
         <section id="skills" className="py-12">
-          <h2 className="text-3xl font-bold mb-6 text-teal-600">Technical Skills 🛠️</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <h2 className="text-3xl font-bold mb-6 text-teal-600">Data Analysis Skills 🛠️</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <Card className="border-teal-100 shadow-sm">
               <CardHeader className="pb-2">
                 <CardTitle className="text-teal-700 flex items-center">
-                  <Code className="mr-2 h-5 w-5" /> Programming & Web
+                  <Code className="mr-2 h-5 w-5" /> Programming
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-teal-500"></div>
-                    <span>Java (Basics)</span>
+                    <span>Python (Pandas, NumPy)</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-teal-500"></div>
-                    <span>HTML, CSS, JavaScript</span>
+                    <span>SQL & MySQL</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-teal-500"></div>
-                    <span>React.js, Express.js, Node.js</span>
+                    <span>R Programming</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-teal-500"></div>
-                    <span>n8n</span>
+                    <span>Excel (Advanced)</span>
                   </li>
                 </ul>
               </CardContent>
@@ -203,18 +209,26 @@ const Index = () => {
             <Card className="border-teal-100 shadow-sm">
               <CardHeader className="pb-2">
                 <CardTitle className="text-teal-700 flex items-center">
-                  <Rocket className="mr-2 h-5 w-5" /> Design
+                  <BarChart3 className="mr-2 h-5 w-5" /> Visualization
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-teal-500"></div>
-                    <span>Figma (Basics)</span>
+                    <span>Power BI</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-teal-500"></div>
-                    <span>UI/UX Design</span>
+                    <span>Tableau</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="w-2 h-2 rounded-full bg-teal-500"></div>
+                    <span>Matplotlib & Seaborn</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="w-2 h-2 rounded-full bg-teal-500"></div>
+                    <span>Excel Dashboards</span>
                   </li>
                 </ul>
               </CardContent>
@@ -223,26 +237,54 @@ const Index = () => {
             <Card className="border-teal-100 shadow-sm">
               <CardHeader className="pb-2">
                 <CardTitle className="text-teal-700 flex items-center">
-                  <Award className="mr-2 h-5 w-5" /> Languages
+                  <Database className="mr-2 h-5 w-5" /> Data Tools
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-teal-500"></div>
-                    <span>Tamil</span>
+                    <span>Web Scraping</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-teal-500"></div>
-                    <span>English</span>
+                    <span>Data Cleaning</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-teal-500"></div>
-                    <span>Basic Hindi</span>
+                    <span>ETL Processes</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-teal-500"></div>
-                    <span>Basic Japanese</span>
+                    <span>API Integration</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-teal-100 shadow-sm">
+              <CardHeader className="pb-2">
+                <CardTitle className="text-teal-700 flex items-center">
+                  <TrendingUp className="mr-2 h-5 w-5" /> Analytics
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2">
+                  <li className="flex items-center gap-2">
+                    <div className="w-2 h-2 rounded-full bg-teal-500"></div>
+                    <span>Statistical Analysis</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="w-2 h-2 rounded-full bg-teal-500"></div>
+                    <span>Predictive Modeling</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="w-2 h-2 rounded-full bg-teal-500"></div>
+                    <span>A/B Testing</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="w-2 h-2 rounded-full bg-teal-500"></div>
+                    <span>Business Intelligence</span>
                   </li>
                 </ul>
               </CardContent>
@@ -252,25 +294,29 @@ const Index = () => {
 
         <Separator className="my-12 bg-teal-100" />
 
-        {/* Workshops & Achievements Section */}
+        {/* Core Competencies Section */}
         <section className="py-12">
-          <h2 className="text-3xl font-bold mb-6 text-teal-600">Workshops & Achievements 🏆</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <h2 className="text-3xl font-bold mb-6 text-teal-600">Core Competencies 🏆</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Card className="border-teal-100 shadow-sm">
               <CardHeader>
                 <CardTitle className="text-teal-700 flex items-center">
-                  <Calendar className="mr-2 h-5 w-5" /> Workshops Attended
+                  <BarChart3 className="mr-2 h-5 w-5" /> Data Analysis
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 rounded-full bg-teal-500 mt-2"></div>
-                    <span>Robotic process automation | Sep 2023</span>
+                    <span>Exploratory Data Analysis (EDA)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 rounded-full bg-teal-500 mt-2"></div>
-                    <span>PCB designing and fabrication | Dec 2023</span>
+                    <span>Data Cleaning & Preprocessing</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-teal-500 mt-2"></div>
+                    <span>Trend & Pattern Recognition</span>
                   </li>
                 </ul>
               </CardContent>
@@ -279,14 +325,46 @@ const Index = () => {
             <Card className="border-teal-100 shadow-sm">
               <CardHeader>
                 <CardTitle className="text-teal-700 flex items-center">
-                  <Award className="mr-2 h-5 w-5" /> Achievements
+                  <PieChart className="mr-2 h-5 w-5" /> Business Insights
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 rounded-full bg-teal-500 mt-2"></div>
-                    <span>Paper presentation - 3rd prize - Dhanalakshmi Srinivasan College of Engineering</span>
+                    <span>Market Research & Analysis</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-teal-500 mt-2"></div>
+                    <span>Competitor Analysis</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-teal-500 mt-2"></div>
+                    <span>KPI Tracking & Reporting</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-teal-100 shadow-sm">
+              <CardHeader>
+                <CardTitle className="text-teal-700 flex items-center">
+                  <Award className="mr-2 h-5 w-5" /> Soft Skills
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-teal-500 mt-2"></div>
+                    <span>Problem Solving</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-teal-500 mt-2"></div>
+                    <span>Critical Thinking</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-teal-500 mt-2"></div>
+                    <span>Data Storytelling</span>
                   </li>
                 </ul>
               </CardContent>
@@ -298,84 +376,124 @@ const Index = () => {
 
         {/* Projects Section */}
         <section id="projects" className="py-12">
-          <h2 className="text-3xl font-bold mb-6 text-teal-600">Projects & Presentations 🚀</h2>
+          <h2 className="text-3xl font-bold mb-6 text-teal-600">Data Analysis Projects 📊</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card className="border-teal-100 overflow-hidden">
-              <div className="h-48 bg-gradient-to-r from-teal-400 to-teal-600 flex items-center justify-center">
-                <span className="text-white text-2xl font-bold">IoT Project</span>
+            <Card className="border-teal-100 overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="h-48 bg-gradient-to-br from-teal-400 to-cyan-600 flex items-center justify-center">
+                <BarChart3 className="w-16 h-16 text-white" />
               </div>
               <CardHeader>
-                <CardTitle className="text-teal-700">IoT Based Irrigation System</CardTitle>
+                <CardTitle className="text-teal-700">🛒 Ecom MarketSpy</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="mb-4 text-foreground">
-                  Developed a smart irrigation system using IoT technology to automate watering based on soil 
-                  moisture levels and environmental conditions.
+                  Competitor Product Insights for D2C Brands. Analyzed e-commerce data to extract competitor 
+                  product information, pricing trends, and market positioning insights for direct-to-consumer brands.
                 </p>
                 <div className="flex gap-2 flex-wrap mb-4">
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">IoT</span>
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Sensors</span>
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Automation</span>
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Web Scraping</span>
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Python</span>
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Market Analysis</span>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="border-teal-100 overflow-hidden">
-              <div className="h-48 bg-gradient-to-r from-teal-400 to-teal-600 flex items-center justify-center">
-                <span className="text-white text-2xl font-bold">RFID Project</span>
+            <Card className="border-teal-100 overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="h-48 bg-gradient-to-br from-purple-400 to-pink-600 flex items-center justify-center">
+                <TrendingUp className="w-16 h-16 text-white" />
               </div>
               <CardHeader>
-                <CardTitle className="text-teal-700">Automation of Petrol Bunk using RFID and GSM</CardTitle>
+                <CardTitle className="text-teal-700">💬 Reddit Intent Leads Engine</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="mb-4 text-foreground">
-                  Created an automated system for petrol stations using RFID technology for vehicle 
-                  identification and GSM modules for communication.
+                  Discover Leads from Buying Conversations. Mined Reddit discussions to identify potential 
+                  customer leads by analyzing buying intent signals in community conversations.
                 </p>
                 <div className="flex gap-2 flex-wrap mb-4">
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">RFID</span>
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">GSM</span>
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Automation</span>
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">NLP</span>
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Sentiment Analysis</span>
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Lead Generation</span>
                 </div>
               </CardContent>
             </Card>
             
-            <Card className="border-teal-100 overflow-hidden">
-              <div className="h-48 bg-gradient-to-r from-teal-400 to-teal-600 flex items-center justify-center">
-                <span className="text-white text-2xl font-bold">Home Automation</span>
+            <Card className="border-teal-100 overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="h-48 bg-gradient-to-br from-orange-400 to-red-600 flex items-center justify-center">
+                <Briefcase className="w-16 h-16 text-white" />
               </div>
               <CardHeader>
-                <CardTitle className="text-teal-700">Headphones Powered Home Automation</CardTitle>
+                <CardTitle className="text-teal-700">🚀 Startup Hiring Monitor</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="mb-4 text-foreground">
-                  Designed and implemented a home automation system that uses headphones as a control 
-                  interface for various household appliances.
+                  Real-Time Signal Tracker for Growing Startups. Tracked startup hiring patterns to identify 
+                  growth signals and emerging opportunities in the startup ecosystem.
                 </p>
                 <div className="flex gap-2 flex-wrap mb-4">
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Home Automation</span>
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">IoT</span>
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Electronics</span>
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Data Mining</span>
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Trend Analysis</span>
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">APIs</span>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="border-teal-100 overflow-hidden">
-              <div className="h-48 bg-gradient-to-r from-teal-400 to-teal-600 flex items-center justify-center">
-                <span className="text-white text-2xl font-bold">AR/VR Concept</span>
+            <Card className="border-teal-100 overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="h-48 bg-gradient-to-br from-blue-400 to-indigo-600 flex items-center justify-center">
+                <Calendar className="w-16 h-16 text-white" />
               </div>
               <CardHeader>
-                <CardTitle className="text-teal-700">AR & VR Integration in ATM</CardTitle>
+                <CardTitle className="text-teal-700">🎯 EventRadar</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="mb-4 text-foreground">
-                  Conceptualized and presented an idea for integrating Augmented Reality and Virtual Reality 
-                  technologies into ATM interfaces for enhanced user experience.
+                  Real-Time Tech & Business Event Discovery Tracker. Built a system to discover and track 
+                  technology and business events, providing insights into industry trends and networking opportunities.
                 </p>
                 <div className="flex gap-2 flex-wrap mb-4">
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">AR</span>
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">VR</span>
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Idea Presentation</span>
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Event Tracking</span>
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Data Collection</span>
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Automation</span>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-teal-100 overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="h-48 bg-gradient-to-br from-green-400 to-emerald-600 flex items-center justify-center">
+                <Database className="w-16 h-16 text-white" />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-teal-700">💼 SignalMiner</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="mb-4 text-foreground">
+                  Extracting Startup Growth Signals from LinkedIn Job Posts. Analyzed LinkedIn job postings 
+                  to extract growth indicators and expansion signals from startup companies.
+                </p>
+                <div className="flex gap-2 flex-wrap mb-4">
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">LinkedIn API</span>
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Signal Detection</span>
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Business Intelligence</span>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-teal-100 overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="h-48 bg-gradient-to-br from-yellow-400 to-orange-600 flex items-center justify-center">
+                <Rocket className="w-16 h-16 text-white" />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-teal-700">💡 MicroSaaS Ideas Miner</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="mb-4 text-foreground">
+                  Discovering Underserved Problems from Public Conversations. Analyzed public forums and 
+                  discussions to identify pain points and opportunities for micro-SaaS products.
+                </p>
+                <div className="flex gap-2 flex-wrap mb-4">
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Text Mining</span>
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Opportunity Analysis</span>
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Data Visualization</span>
                 </div>
               </CardContent>
             </Card>
@@ -384,22 +502,31 @@ const Index = () => {
 
         <Separator className="my-12 bg-teal-100" />
 
-        {/* Internship & Social Activities Section */}
+        {/* Experience & Activities Section */}
         <section className="py-12">
-          <h2 className="text-3xl font-bold mb-6 text-teal-600">Internship & Social Activities 🌱</h2>
+          <h2 className="text-3xl font-bold mb-6 text-teal-600">Experience & Activities 🌱</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card className="border-teal-100 shadow-sm">
               <CardHeader>
                 <CardTitle className="text-teal-700 flex items-center">
-                  <Briefcase className="mr-2 h-5 w-5" /> Internship Experience
+                  <Briefcase className="mr-2 h-5 w-5" /> Training & Experience
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="flex items-start gap-3 mb-2">
-                  <div className="w-2 h-2 rounded-full bg-teal-500 mt-2"></div>
-                  <div>
-                    <p className="font-medium">UI/UX Design (21 days)</p>
-                    <p className="text-sm text-muted-foreground">Postulate</p>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 rounded-full bg-teal-500 mt-2"></div>
+                    <div>
+                      <p className="font-medium">Data Analysis Training Program</p>
+                      <p className="text-sm text-muted-foreground">Completed 30 levels covering Python, SQL, Statistics, and Visualization</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 rounded-full bg-teal-500 mt-2"></div>
+                    <div>
+                      <p className="font-medium">Multiple Real-World Projects</p>
+                      <p className="text-sm text-muted-foreground">8+ comprehensive data analysis projects across various domains</p>
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -415,11 +542,15 @@ const Index = () => {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 rounded-full bg-teal-500 mt-2"></div>
-                    <span>Planting saplings</span>
+                    <span>Environmental initiatives - Planting saplings</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-2 h-2 rounded-full bg-teal-500 mt-2"></div>
                     <span>Member of Women Empowerment Cell - SNS College Of Engineering</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-teal-500 mt-2"></div>
+                    <span>Active participant in data analytics community workshops</span>
                   </li>
                 </ul>
               </CardContent>
