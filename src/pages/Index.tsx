@@ -9,7 +9,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <header className="w-full py-6 px-4 md:px-8 lg:px-16 flex flex-col md:flex-row justify-between items-center">
-        <h1 className="text-2xl font-bold text-teal-600">THARIGA SHRINITHI R</h1>
+        <h1 className="text-2xl font-bold text-teal-600">Your Name</h1>
         <nav className="mt-4 md:mt-0">
           <ul className="flex space-x-6">
             <li>
@@ -46,12 +46,12 @@ const Index = () => {
         <section className="py-16 flex flex-col items-center text-center">
           <div className="w-32 h-32 rounded-full overflow-hidden mb-6">
             <Avatar className="w-full h-full">
-              <AvatarImage src="/profile-photo.png" alt="THARIGA SHRINITHI R" className="w-full h-full object-cover" />
-              <AvatarFallback className="bg-teal-200 text-teal-800 text-4xl font-bold">TS</AvatarFallback>
+              <AvatarImage src="/profile-photo.png" alt="Your Name" className="w-full h-full object-cover" />
+              <AvatarFallback className="bg-teal-200 text-teal-800 text-4xl font-bold">YN</AvatarFallback>
             </Avatar>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-foreground">
-            THARIGA SHRINITHI R
+            Your Name
           </h1>
           <h2 className="text-xl md:text-2xl text-teal-600 mb-6">📊 Aspiring Data Analyst | Transforming Data into Insights 📈</h2>
           <p className="text-lg max-w-2xl mb-8 text-foreground">
@@ -78,7 +78,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <p className="text-foreground mb-4 leading-relaxed">
-                Hello! I'm THARIGA SHRINITHI R, a data enthusiast from SNS College of Engineering. 
+                Hello! I'm a data enthusiast from SNS College of Engineering.
                 I'm passionate about transforming raw data into actionable insights and creating data-driven solutions 
                 that solve real business problems. My journey into data analytics has equipped me with strong analytical 
                 thinking and problem-solving skills.
@@ -572,25 +572,25 @@ const Index = () => {
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-teal-600" />
-                  <a href="mailto:tharigashrinithi2005@gmail.com" className="text-foreground hover:text-teal-600">
-                    tharigashrinithi2005@gmail.com
+                  <a href="mailto:your.email@example.com" className="text-foreground hover:text-teal-600">
+                    your.email@example.com
                   </a>
                 </div>
                 <div className="flex items-center gap-3">
                   <Linkedin className="h-5 w-5 text-teal-600" />
                   <a 
-                    href="https://www.linkedin.com/in/r-thariga-shrinithi-ece-snsce" 
+                    href="https://www.linkedin.com/in/your-profile" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-foreground hover:text-teal-600"
                   >
-                    linkedin.com/in/r-thariga-shrinithi-ece-snsce
+                    linkedin.com/in/your-profile
                   </a>
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="h-5 w-5 text-teal-600" />
                   <span className="text-foreground">
-                    3/58, Ayyampudur, Aniyar, Velagounda mpatti, Namakkal-637212
+                    Your City, Your State
                   </span>
                 </div>
               </div>
@@ -643,10 +643,10 @@ const Index = () => {
       <footer className="bg-teal-50 py-8 mt-12">
         <div className="container px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-teal-800 mb-4 md:mb-0">© 2024 THARIGA SHRINITHI R. All rights reserved.</p>
+            <p className="text-teal-800 mb-4 md:mb-0">© 2024 Your Name. All rights reserved.</p>
             <div className="flex space-x-4">
               <a 
-                href="https://www.linkedin.com/in/r-thariga-shrinithi-ece-snsce" 
+                href="https://www.linkedin.com/in/your-profile" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-teal-600 hover:text-teal-800"
@@ -654,7 +654,7 @@ const Index = () => {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a 
-                href="mailto:tharigashrinithi2005@gmail.com"
+                href="mailto:your.email@example.com"
                 className="text-teal-600 hover:text-teal-800"
               >
                 <Mail className="h-5 w-5" />
