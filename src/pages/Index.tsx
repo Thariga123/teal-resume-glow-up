@@ -75,71 +75,129 @@ const Index = () => {
         {/* About Section */}
         <section id="about" className="py-12">
           <h2 className="text-3xl font-bold mb-8 text-teal-600 text-center md:text-left">About Me 🌟</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="flex flex-col justify-center">
-              <p className="text-foreground mb-4 leading-relaxed text-justify">
-                Hello! I'm a data enthusiast from a leading engineering college. 
-                I'm passionate about transforming raw data into actionable insights and creating data-driven solutions 
-                that solve real business problems. My journey into data analytics has equipped me with strong analytical 
-                thinking and problem-solving skills.
-              </p>
-              <p className="text-foreground mb-4 leading-relaxed text-justify">
-                I specialize in data collection, cleaning, analysis, and visualization using industry-standard tools and techniques. 
-                With hands-on experience in multiple data analysis projects, I've developed expertise in discovering patterns, 
-                trends, and insights from complex datasets. I'm seeking opportunities to apply my skills in a dynamic environment 
-                where I can contribute to data-driven decision making.
-              </p>
-            </div>
-            <div className="bg-teal-50 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-4 text-teal-700 flex items-center">
-                <BookOpen className="mr-2 h-5 w-5 text-teal-600" /> Education
-              </h3>
-              <div id="education" className="mb-4">
-                <p className="font-medium">Bachelor of Engineering - Computer Science</p>
-                <p className="text-teal-600">University Name</p>
-                <p className="text-sm text-muted-foreground">2022 - 2026 | CGPA: 9.5/10</p>
-              </div>
-              <div className="mb-4">
-                <p className="font-medium">Higher Secondary School</p>
-                <p className="text-teal-600">School Name</p>
-                <p className="text-sm text-muted-foreground">2020 - 2022 | 90%</p>
-              </div>
-              <div>
-                <p className="font-medium">Secondary School</p>
-                <p className="text-teal-600">School Name</p>
-                <p className="text-sm text-muted-foreground">2019 - 2020 | 95%</p>
-              </div>
-            </div>
+          <div className="flex flex-col justify-center">
+            <p className="text-foreground mb-4 leading-relaxed text-justify">
+              Hello! I'm a data enthusiast from a leading engineering college. 
+              I'm passionate about transforming raw data into actionable insights and creating data-driven solutions 
+              that solve real business problems. My journey into data analytics has equipped me with strong analytical 
+              thinking and problem-solving skills.
+            </p>
+            <p className="text-foreground mb-4 leading-relaxed text-justify">
+              I specialize in data collection, cleaning, analysis, and visualization using industry-standard tools and techniques. 
+              With hands-on experience in multiple data analysis projects, I've developed expertise in discovering patterns, 
+              trends, and insights from complex datasets. I'm seeking opportunities to apply my skills in a dynamic environment 
+              where I can contribute to data-driven decision making.
+            </p>
           </div>
         </section>
 
         <Separator className="my-12 bg-teal-100" />
 
-        {/* Training & Certifications Section */}
+        {/* Education Section */}
+        <section id="education" className="py-12">
+          <h2 className="text-3xl font-bold mb-8 text-teal-600 text-center md:text-left">Education 🎓</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Card className="border-teal-100 shadow-sm">
+              <CardHeader className="pb-2">
+                <CardTitle className="text-teal-700">Bachelor's Degree</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="font-medium">Bachelor of Engineering - Computer Science</p>
+                <p className="text-teal-600 mt-2">University Name</p>
+                <p className="text-sm text-muted-foreground mt-1">2022 - 2026</p>
+                <p className="text-sm font-medium mt-2">CGPA: 9.5/10</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-teal-100 shadow-sm">
+              <CardHeader className="pb-2">
+                <CardTitle className="text-teal-700">Higher Secondary</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="font-medium">Higher Secondary School</p>
+                <p className="text-teal-600 mt-2">School Name</p>
+                <p className="text-sm text-muted-foreground mt-1">2020 - 2022</p>
+                <p className="text-sm font-medium mt-2">Percentage: 90%</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-teal-100 shadow-sm">
+              <CardHeader className="pb-2">
+                <CardTitle className="text-teal-700">Secondary School</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="font-medium">Secondary School</p>
+                <p className="text-teal-600 mt-2">School Name</p>
+                <p className="text-sm text-muted-foreground mt-1">2019 - 2020</p>
+                <p className="text-sm font-medium mt-2">Percentage: 95%</p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <Separator className="my-12 bg-teal-100" />
+
+        {/* Experience Section */}
         <section className="py-12">
-          <h2 className="text-3xl font-bold mb-8 text-teal-600 text-center md:text-left">Training & Certifications 📚</h2>
+          <h2 className="text-3xl font-bold mb-8 text-teal-600 text-center md:text-left">Experience (Internships) 💼</h2>
+          <Card className="border-teal-100 shadow-sm">
+            <CardHeader>
+              <CardTitle className="text-teal-700 flex items-center">
+                <Briefcase className="mr-2 h-5 w-5" /> Data Analysis Training & Projects
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-teal-500 mt-2"></div>
+                  <div>
+                    <p className="font-medium">Data Analysis Training Program</p>
+                    <p className="text-sm text-muted-foreground">Completed 30 levels covering Python, SQL, Statistics, and Visualization</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-teal-500 mt-2"></div>
+                  <div>
+                    <p className="font-medium">Multiple Real-World Projects</p>
+                    <p className="text-sm text-muted-foreground">6+ comprehensive data analysis projects across various domains</p>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
+        <Separator className="my-12 bg-teal-100" />
+
+        {/* Training Section */}
+        <section className="py-12">
+          <h2 className="text-3xl font-bold mb-8 text-teal-600 text-center md:text-left">Training 📚</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Card className="border-teal-100 shadow-sm">
               <CardHeader className="pb-2">
-                <CardTitle className="text-teal-700">Data Analytics Training</CardTitle>
+                <CardTitle className="text-teal-700">Phase 1 - Data Analysis Fundamentals</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <Star className="h-5 w-5 text-teal-500 mt-0.5 flex-shrink-0" />
-                    <span>Phase 1 - Data Analysis (30 Levels Completed)</span>
+                    <span>30 Levels Completed in Data Analysis</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Star className="h-5 w-5 text-teal-500 mt-0.5 flex-shrink-0" />
-                    <span>Python for Data Analysis</span>
+                    <span>Python Programming & Data Manipulation</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Star className="h-5 w-5 text-teal-500 mt-0.5 flex-shrink-0" />
-                    <span>SQL & Database Management</span>
+                    <span>SQL & Database Querying</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Star className="h-5 w-5 text-teal-500 mt-0.5 flex-shrink-0" />
-                    <span>Data Visualization with Power BI & Tableau</span>
+                    <span>Statistical Analysis & EDA</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Star className="h-5 w-5 text-teal-500 mt-0.5 flex-shrink-0" />
+                    <span>Data Cleaning & Preprocessing</span>
                   </li>
                 </ul>
               </CardContent>
@@ -147,25 +205,29 @@ const Index = () => {
 
             <Card className="border-teal-100 shadow-sm">
               <CardHeader className="pb-2">
-                <CardTitle className="text-teal-700">Professional Certifications</CardTitle>
+                <CardTitle className="text-teal-700">Phase 2 - Advanced Analytics & Visualization</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <Star className="h-5 w-5 text-teal-500 mt-0.5 flex-shrink-0" />
-                    <span>Salesforce Certified AI Associate | Salesforce | Oct 2024</span>
+                    <span>Power BI Dashboard Development</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Star className="h-5 w-5 text-teal-500 mt-0.5 flex-shrink-0" />
-                    <span>Salesforce Certified AI Specialist | Salesforce | Oct 2024</span>
+                    <span>Tableau Data Visualization</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Star className="h-5 w-5 text-teal-500 mt-0.5 flex-shrink-0" />
-                    <span>Oracle AI Foundation Associate | Oracle | Feb 2025</span>
+                    <span>Advanced Excel & Analytics</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Star className="h-5 w-5 text-teal-500 mt-0.5 flex-shrink-0" />
-                    <span>Advanced Excel & Statistical Analysis</span>
+                    <span>Web Scraping & API Integration</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Star className="h-5 w-5 text-teal-500 mt-0.5 flex-shrink-0" />
+                    <span>Real-World Project Implementation</span>
                   </li>
                 </ul>
               </CardContent>
@@ -503,57 +565,79 @@ const Index = () => {
 
         <Separator className="my-12 bg-teal-100" />
 
-        {/* Experience & Activities Section */}
+        {/* Certifications Section */}
         <section className="py-12">
-          <h2 className="text-3xl font-bold mb-8 text-teal-600 text-center md:text-left">Experience & Activities 🌱</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <h2 className="text-3xl font-bold mb-8 text-teal-600 text-center md:text-left">Certifications 🏆</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card className="border-teal-100 shadow-sm">
-              <CardHeader>
+              <CardHeader className="pb-2">
                 <CardTitle className="text-teal-700 flex items-center">
-                  <Briefcase className="mr-2 h-5 w-5" /> Training & Experience
+                  <Award className="mr-2 h-5 w-5" /> Salesforce AI Associate
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-teal-500 mt-2"></div>
-                    <div>
-                      <p className="font-medium">Data Analysis Training Program</p>
-                      <p className="text-sm text-muted-foreground">Completed 30 levels covering Python, SQL, Statistics, and Visualization</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-teal-500 mt-2"></div>
-                    <div>
-                      <p className="font-medium">Multiple Real-World Projects</p>
-                      <p className="text-sm text-muted-foreground">8+ comprehensive data analysis projects across various domains</p>
-                    </div>
-                  </div>
-                </div>
+                <p className="text-sm text-muted-foreground mb-2">Salesforce</p>
+                <p className="text-sm font-medium text-teal-600">October 2024</p>
               </CardContent>
             </Card>
 
             <Card className="border-teal-100 shadow-sm">
-              <CardHeader>
+              <CardHeader className="pb-2">
                 <CardTitle className="text-teal-700 flex items-center">
-                  <Heart className="mr-2 h-5 w-5" /> Social Activities
+                  <Award className="mr-2 h-5 w-5" /> Salesforce AI Specialist
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 rounded-full bg-teal-500 mt-2"></div>
-                    <span>Environmental initiatives - Planting saplings</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 rounded-full bg-teal-500 mt-2"></div>
-                    <span>Member of Women Empowerment Cell - SNS College Of Engineering</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 rounded-full bg-teal-500 mt-2"></div>
-                    <span>Active participant in data analytics community workshops</span>
-                  </li>
-                </ul>
+                <p className="text-sm text-muted-foreground mb-2">Salesforce</p>
+                <p className="text-sm font-medium text-teal-600">October 2024</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-teal-100 shadow-sm">
+              <CardHeader className="pb-2">
+                <CardTitle className="text-teal-700 flex items-center">
+                  <Award className="mr-2 h-5 w-5" /> Oracle AI Foundation
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground mb-2">Oracle</p>
+                <p className="text-sm font-medium text-teal-600">February 2025</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-teal-100 shadow-sm">
+              <CardHeader className="pb-2">
+                <CardTitle className="text-teal-700 flex items-center">
+                  <Award className="mr-2 h-5 w-5" /> Advanced Excel
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground mb-2">Professional Development</p>
+                <p className="text-sm font-medium text-teal-600">Statistical Analysis</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-teal-100 shadow-sm">
+              <CardHeader className="pb-2">
+                <CardTitle className="text-teal-700 flex items-center">
+                  <Award className="mr-2 h-5 w-5" /> Data Analytics
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground mb-2">Professional Training</p>
+                <p className="text-sm font-medium text-teal-600">30 Levels Completed</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-teal-100 shadow-sm">
+              <CardHeader className="pb-2">
+                <CardTitle className="text-teal-700 flex items-center">
+                  <Award className="mr-2 h-5 w-5" /> Power BI & Tableau
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground mb-2">Data Visualization</p>
+                <p className="text-sm font-medium text-teal-600">Professional Certificate</p>
               </CardContent>
             </Card>
           </div>
