@@ -123,7 +123,7 @@ const Index = () => {
               <CardTitle className="text-teal-700 flex items-center">
                 <Briefcase className="mr-2 h-5 w-5" /> Data Analyst Intern
               </CardTitle>
-              <p className="text-sm text-teal-600 font-medium mt-1">Company Name</p>
+              <p className="text-sm text-teal-600 font-medium mt-1">Syncner</p>
               <p className="text-sm text-muted-foreground">Role: Data Analysis Intern | June 2024 - Present</p>
             </CardHeader>
             <CardContent>
