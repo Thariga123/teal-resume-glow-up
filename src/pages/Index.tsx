@@ -121,8 +121,10 @@ const Index = () => {
           <Card className="border-teal-100 shadow-sm">
             <CardHeader>
               <CardTitle className="text-teal-700 flex items-center">
-                <Briefcase className="mr-2 h-5 w-5" /> Data Analysis Training & Projects
+                <Briefcase className="mr-2 h-5 w-5" /> Data Analyst Intern
               </CardTitle>
+              <p className="text-sm text-teal-600 font-medium mt-1">Company Name</p>
+              <p className="text-sm text-muted-foreground">Role: Data Analysis Intern | June 2024 - Present</p>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
@@ -208,6 +210,134 @@ const Index = () => {
                     <span>Real-World Project Implementation</span>
                   </li>
                 </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <Separator className="my-12 bg-teal-100" />
+
+        {/* Projects Section */}
+        <section id="projects" className="py-12">
+          <h2 className="text-3xl font-bold mb-8 text-teal-600 text-center md:text-left">Data Analysis Projects 📊</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <Card className="border-teal-100 overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="h-48 bg-gradient-to-br from-teal-400 to-cyan-600 flex items-center justify-center">
+                <BarChart3 className="w-16 h-16 text-white" />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-teal-700">🛒 Ecom MarketSpy</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="mb-4 text-foreground">
+                  Competitor Product Insights for D2C Brands. Analyzed e-commerce data to extract competitor 
+                  product information, pricing trends, and market positioning insights for direct-to-consumer brands.
+                </p>
+                <div className="flex gap-2 flex-wrap mb-4">
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Web Scraping</span>
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Python</span>
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Market Analysis</span>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-teal-100 overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="h-48 bg-gradient-to-br from-purple-400 to-pink-600 flex items-center justify-center">
+                <TrendingUp className="w-16 h-16 text-white" />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-teal-700">💬 Reddit Intent Leads Engine</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="mb-4 text-foreground">
+                  Discover Leads from Buying Conversations. Mined Reddit discussions to identify potential 
+                  customer leads by analyzing buying intent signals in community conversations.
+                </p>
+                <div className="flex gap-2 flex-wrap mb-4">
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">NLP</span>
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Sentiment Analysis</span>
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Lead Generation</span>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <Card className="border-teal-100 overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="h-48 bg-gradient-to-br from-orange-400 to-red-600 flex items-center justify-center">
+                <Briefcase className="w-16 h-16 text-white" />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-teal-700">🚀 Startup Hiring Monitor</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="mb-4 text-foreground">
+                  Real-Time Signal Tracker for Growing Startups. Tracked startup hiring patterns to identify 
+                  growth signals and emerging opportunities in the startup ecosystem.
+                </p>
+                <div className="flex gap-2 flex-wrap mb-4">
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Data Mining</span>
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Trend Analysis</span>
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">APIs</span>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-teal-100 overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="h-48 bg-gradient-to-br from-blue-400 to-indigo-600 flex items-center justify-center">
+                <Calendar className="w-16 h-16 text-white" />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-teal-700">🎯 EventRadar</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="mb-4 text-foreground">
+                  Real-Time Tech & Business Event Discovery Tracker. Built a system to discover and track 
+                  technology and business events, providing insights into industry trends and networking opportunities.
+                </p>
+                <div className="flex gap-2 flex-wrap mb-4">
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Event Tracking</span>
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Data Collection</span>
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Automation</span>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-teal-100 overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="h-48 bg-gradient-to-br from-green-400 to-emerald-600 flex items-center justify-center">
+                <Database className="w-16 h-16 text-white" />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-teal-700">💼 SignalMiner</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="mb-4 text-foreground">
+                  Extracting Startup Growth Signals from LinkedIn Job Posts. Analyzed LinkedIn job postings 
+                  to extract growth indicators and expansion signals from startup companies.
+                </p>
+                <div className="flex gap-2 flex-wrap mb-4">
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">LinkedIn API</span>
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Signal Detection</span>
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Business Intelligence</span>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-teal-100 overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="h-48 bg-gradient-to-br from-yellow-400 to-orange-600 flex items-center justify-center">
+                <Rocket className="w-16 h-16 text-white" />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-teal-700">💡 MicroSaaS Ideas Miner</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="mb-4 text-foreground">
+                  Discovering Underserved Problems from Public Conversations. Analyzed public forums and 
+                  discussions to identify pain points and opportunities for micro-SaaS products.
+                </p>
+                <div className="flex gap-2 flex-wrap mb-4">
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Text Mining</span>
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Opportunity Analysis</span>
+                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Data Visualization</span>
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -408,134 +538,6 @@ const Index = () => {
                     <span>Data Storytelling</span>
                   </li>
                 </ul>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
-
-        <Separator className="my-12 bg-teal-100" />
-
-        {/* Projects Section */}
-        <section id="projects" className="py-12">
-          <h2 className="text-3xl font-bold mb-8 text-teal-600 text-center md:text-left">Data Analysis Projects 📊</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card className="border-teal-100 overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="h-48 bg-gradient-to-br from-teal-400 to-cyan-600 flex items-center justify-center">
-                <BarChart3 className="w-16 h-16 text-white" />
-              </div>
-              <CardHeader>
-                <CardTitle className="text-teal-700">🛒 Ecom MarketSpy</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="mb-4 text-foreground">
-                  Competitor Product Insights for D2C Brands. Analyzed e-commerce data to extract competitor 
-                  product information, pricing trends, and market positioning insights for direct-to-consumer brands.
-                </p>
-                <div className="flex gap-2 flex-wrap mb-4">
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Web Scraping</span>
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Python</span>
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Market Analysis</span>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-teal-100 overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="h-48 bg-gradient-to-br from-purple-400 to-pink-600 flex items-center justify-center">
-                <TrendingUp className="w-16 h-16 text-white" />
-              </div>
-              <CardHeader>
-                <CardTitle className="text-teal-700">💬 Reddit Intent Leads Engine</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="mb-4 text-foreground">
-                  Discover Leads from Buying Conversations. Mined Reddit discussions to identify potential 
-                  customer leads by analyzing buying intent signals in community conversations.
-                </p>
-                <div className="flex gap-2 flex-wrap mb-4">
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">NLP</span>
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Sentiment Analysis</span>
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Lead Generation</span>
-                </div>
-              </CardContent>
-            </Card>
-            
-            <Card className="border-teal-100 overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="h-48 bg-gradient-to-br from-orange-400 to-red-600 flex items-center justify-center">
-                <Briefcase className="w-16 h-16 text-white" />
-              </div>
-              <CardHeader>
-                <CardTitle className="text-teal-700">🚀 Startup Hiring Monitor</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="mb-4 text-foreground">
-                  Real-Time Signal Tracker for Growing Startups. Tracked startup hiring patterns to identify 
-                  growth signals and emerging opportunities in the startup ecosystem.
-                </p>
-                <div className="flex gap-2 flex-wrap mb-4">
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Data Mining</span>
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Trend Analysis</span>
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">APIs</span>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-teal-100 overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="h-48 bg-gradient-to-br from-blue-400 to-indigo-600 flex items-center justify-center">
-                <Calendar className="w-16 h-16 text-white" />
-              </div>
-              <CardHeader>
-                <CardTitle className="text-teal-700">🎯 EventRadar</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="mb-4 text-foreground">
-                  Real-Time Tech & Business Event Discovery Tracker. Built a system to discover and track 
-                  technology and business events, providing insights into industry trends and networking opportunities.
-                </p>
-                <div className="flex gap-2 flex-wrap mb-4">
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Event Tracking</span>
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Data Collection</span>
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Automation</span>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-teal-100 overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="h-48 bg-gradient-to-br from-green-400 to-emerald-600 flex items-center justify-center">
-                <Database className="w-16 h-16 text-white" />
-              </div>
-              <CardHeader>
-                <CardTitle className="text-teal-700">💼 SignalMiner</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="mb-4 text-foreground">
-                  Extracting Startup Growth Signals from LinkedIn Job Posts. Analyzed LinkedIn job postings 
-                  to extract growth indicators and expansion signals from startup companies.
-                </p>
-                <div className="flex gap-2 flex-wrap mb-4">
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">LinkedIn API</span>
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Signal Detection</span>
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Business Intelligence</span>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-teal-100 overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="h-48 bg-gradient-to-br from-yellow-400 to-orange-600 flex items-center justify-center">
-                <Rocket className="w-16 h-16 text-white" />
-              </div>
-              <CardHeader>
-                <CardTitle className="text-teal-700">💡 MicroSaaS Ideas Miner</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="mb-4 text-foreground">
-                  Discovering Underserved Problems from Public Conversations. Analyzed public forums and 
-                  discussions to identify pain points and opportunities for micro-SaaS products.
-                </p>
-                <div className="flex gap-2 flex-wrap mb-4">
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Text Mining</span>
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Opportunity Analysis</span>
-                  <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Data Visualization</span>
-                </div>
               </CardContent>
             </Card>
           </div>
