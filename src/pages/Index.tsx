@@ -75,63 +75,41 @@ const Index = () => {
         {/* About Section */}
         <section id="about" className="py-12">
           <h2 className="text-3xl font-bold mb-8 text-teal-600 text-center md:text-left">About Me 🌟</h2>
-          <div className="flex flex-col justify-center">
-            <p className="text-foreground mb-4 leading-relaxed text-justify">
-              Hello! I'm a data enthusiast from a leading engineering college. 
-              I'm passionate about transforming raw data into actionable insights and creating data-driven solutions 
-              that solve real business problems. My journey into data analytics has equipped me with strong analytical 
-              thinking and problem-solving skills.
-            </p>
-            <p className="text-foreground mb-4 leading-relaxed text-justify">
-              I specialize in data collection, cleaning, analysis, and visualization using industry-standard tools and techniques. 
-              With hands-on experience in multiple data analysis projects, I've developed expertise in discovering patterns, 
-              trends, and insights from complex datasets. I'm seeking opportunities to apply my skills in a dynamic environment 
-              where I can contribute to data-driven decision making.
-            </p>
-          </div>
-        </section>
-
-        <Separator className="my-12 bg-teal-100" />
-
-        {/* Education Section */}
-        <section id="education" className="py-12">
-          <h2 className="text-3xl font-bold mb-8 text-teal-600 text-center md:text-left">Education 🎓</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="border-teal-100 shadow-sm">
-              <CardHeader className="pb-2">
-                <CardTitle className="text-teal-700">Bachelor's Degree</CardTitle>
-              </CardHeader>
-              <CardContent>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="flex flex-col justify-center">
+              <p className="text-foreground mb-4 leading-relaxed text-justify">
+                Hello! I'm a data enthusiast from a leading engineering college. 
+                I'm passionate about transforming raw data into actionable insights and creating data-driven solutions 
+                that solve real business problems. My journey into data analytics has equipped me with strong analytical 
+                thinking and problem-solving skills.
+              </p>
+              <p className="text-foreground mb-4 leading-relaxed text-justify">
+                I specialize in data collection, cleaning, analysis, and visualization using industry-standard tools and techniques. 
+                With hands-on experience in multiple data analysis projects, I've developed expertise in discovering patterns, 
+                trends, and insights from complex datasets. I'm seeking opportunities to apply my skills in a dynamic environment 
+                where I can contribute to data-driven decision making.
+              </p>
+            </div>
+            <div className="bg-teal-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4 text-teal-700 flex items-center">
+                <BookOpen className="mr-2 h-5 w-5 text-teal-600" /> Education
+              </h3>
+              <div id="education" className="mb-4">
                 <p className="font-medium">Bachelor of Engineering - Computer Science</p>
-                <p className="text-teal-600 mt-2">University Name</p>
-                <p className="text-sm text-muted-foreground mt-1">2022 - 2026</p>
-                <p className="text-sm font-medium mt-2">CGPA: 9.5/10</p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-teal-100 shadow-sm">
-              <CardHeader className="pb-2">
-                <CardTitle className="text-teal-700">Higher Secondary</CardTitle>
-              </CardHeader>
-              <CardContent>
+                <p className="text-teal-600">University Name</p>
+                <p className="text-sm text-muted-foreground">2022 - 2026 | CGPA: 9.5/10</p>
+              </div>
+              <div className="mb-4">
                 <p className="font-medium">Higher Secondary School</p>
-                <p className="text-teal-600 mt-2">School Name</p>
-                <p className="text-sm text-muted-foreground mt-1">2020 - 2022</p>
-                <p className="text-sm font-medium mt-2">Percentage: 90%</p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-teal-100 shadow-sm">
-              <CardHeader className="pb-2">
-                <CardTitle className="text-teal-700">Secondary School</CardTitle>
-              </CardHeader>
-              <CardContent>
+                <p className="text-teal-600">School Name</p>
+                <p className="text-sm text-muted-foreground">2020 - 2022 | 90%</p>
+              </div>
+              <div>
                 <p className="font-medium">Secondary School</p>
-                <p className="text-teal-600 mt-2">School Name</p>
-                <p className="text-sm text-muted-foreground mt-1">2019 - 2020</p>
-                <p className="text-sm font-medium mt-2">Percentage: 95%</p>
-              </CardContent>
-            </Card>
+                <p className="text-teal-600">School Name</p>
+                <p className="text-sm text-muted-foreground">2019 - 2020 | 95%</p>
+              </div>
+            </div>
           </div>
         </section>
 
